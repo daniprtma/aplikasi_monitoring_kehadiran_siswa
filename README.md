@@ -1,16 +1,10 @@
-# aplikasi_monitoring_kehadiran_siswa
+# APLIKASI MONITORING KEHADIRAN SISWA
 
-A new Flutter project.
+![Screenshot 2024-11-18 150341](https://github.com/user-attachments/assets/af47f241-1bac-46d1-ad3b-84242560296b)
 
-## Getting Started
+## Tampilan Riwayat Kehadiran Siswa
+### tabel ini akan menampilkan riwayat kehadiran siswa dan secara otomatis akan me-refresh dalam waktu 1 Menit
+![Screenshot 2024-11-18 150305](https://github.com/user-attachments/assets/ed009bf9-5313-4477-959d-e6a00237822c)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tampilan Setelah Menginputkan Data Kehadiran Siswa
+![Screenshot 2024-11-18 150434](https://github.com/user-attachments/assets/f80b8645-87c3-4cdb-8b0b-877a47929573)
