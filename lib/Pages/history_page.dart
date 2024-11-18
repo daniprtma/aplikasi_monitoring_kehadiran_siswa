@@ -9,20 +9,29 @@ class HistoryPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text('Riwayat Kehadiran')),
-      body: ListView.builder(
-        itemCount: provider.attendanceRecords.length,
-        itemBuilder: (context, index) {
-          final record = provider.attendanceRecords[index];
-          return ListTile(
-            title: Text(
-              '${record.date.toLocal()}'.split(' ')[0],
+      body: provider.attendanceRecords.isEmpty
+          ? Center(
+              child: Text(
+                'Riwayat kosong. Data akan otomatis diperbarui setiap 1 menit.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            )
+          : ListView.builder(
+              itemCount: provider.attendanceRecords.length,
+              itemBuilder: (context, index) {
+                final record = provider.attendanceRecords[index];
+                return ListTile(
+                  title: Text(
+                    'Tanggal: ${record.date.toLocal()}'.split(' ')[0],
+                  ),
+                  subtitle: Text(
+                    'Hadir: ${record.presentCount}, Tidak Hadir: ${record.absentCount}',
+                  ),
+                  leading: Icon(Icons.calendar_today),
+                );
+              },
             ),
-            subtitle: Text(
-              'Hadir: ${record.presentCount}, Tidak Hadir: ${record.absentCount}',
-            ),
-          );
-        },
-      ),
     );
   }
 }
