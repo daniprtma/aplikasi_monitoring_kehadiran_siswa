@@ -1,4 +1,4 @@
-# aplikasi_monitoring_kehadiran_siswa
+# APLIKASI MONITORING KEHADIRAN SISWA
 
 ![Screenshot 2024-11-18 150341](https://github.com/user-attachments/assets/af47f241-1bac-46d1-ad3b-84242560296b)
 
